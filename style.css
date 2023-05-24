@@ -1,0 +1,276 @@
+html {
+    font-family: 'Space Grotesk';
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    border: 3px solid blue;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    color: white;
+    margin-bottom: -110px;
+    height: 100px;
+}
+
+.navbar-container {
+    /* border: 3px solid red; */
+    width: 1140px;
+    display: inline-grid;
+}
+
+.navbar-content {
+    /* border: 2px solid green;
+    margin: 10px; */
+    display: flex;
+    padding: 20px;
+}
+
+.navbar-logo {
+    /* border: 1px solid pink;
+    margin: 10px; */
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    /* border: 1px solid pink;
+    margin: 10px; */
+    padding: 0;
+    text-align: right;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbar-menu li {
+    padding: 0 10px;
+}
+
+.col {
+    width: 50%;
+    float: left;
+}
+
+section {
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+
+#banner {
+    background-color: #1F2937;
+}
+
+.banner-container {
+    width: 1140px;
+    max-width: 1140px;
+    display: flex; 
+    padding: 7rem 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.banner-img {
+    justify-content: center;
+    display: flex;
+}
+
+#banner h1 {
+    font-size: 64px;
+    line-height: 100%;
+    font-weight: 700;
+    margin: auto;
+    color: #F9FAFB;
+}
+
+#banner p {
+    color: #F9FAFB
+}
+
+#banner button {
+    background-color: #3B82F6;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+    pointer-events: fill;
+}
+
+#banner button:hover {
+    background-color: #2765c7;
+}
+
+.cards-container {
+    width: 800px;
+    max-width: 1140px;
+    padding: 6rem 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+
+#cards h3 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.cards-content {
+    gap: 40px;
+    display: flex;
+    
+    width: 100%;
+}
+
+.col-sm {
+    flex: 25%;
+}
+
+.cards-content div {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.cards-content span {
+    height: 150px;
+    width: 100%;
+    border: 6px solid #3B82F6;
+    display: block;
+    border-radius: 33px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#quote {
+    background-color: #E5E7EB;
+}
+
+.quote-container {
+    width: 800px;
+    max-width: 1140px;
+    padding: 6rem 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+#quote q,
+#quote p {
+    font-size: 37px;
+    line-height: 60px;
+}
+
+#quote p {
+    text-align: end;
+    font-weight: 700;
+}
+
+#cta {
+    
+    padding: 3rem 3em;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.cta-container {
+    width: 1064px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #3B82F6;
+    display: flex;
+    padding: 3em;
+    gap: 40px;
+    border-radius: 16px;
+}
+
+.cta-content {
+    color: white;
+
+}
+
+#cta h6 {
+    font-size: 37px;
+    margin: 0;
+}
+
+#cta p {
+    line-height: 30px;
+}
+
+#cta button {
+    border: 3px solid white;
+    background: transparent;
+    color: white;
+    padding: 20px 60px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #1F2937;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    .banner-container {
+      flex-direction: column;
+      padding: 100px 20px 0 20px;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .banner-img {
+        padding-top: 40px;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    .cards-content {
+        flex-wrap: wrap;
+    }
+
+    .col-sm {
+        flex: 30%;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .quote-container {
+        padding: 20px;
+    }
+
+    #quote q,
+    #quote p {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    #quote p {
+        text-align: end;
+        font-weight: 700;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        justify-content: start;
+    align-items: start;
+    }
+    
+  }
